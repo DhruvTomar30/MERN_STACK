@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples and types of DOM</title>
+</head>
+<body>
+    <!-- Basic Example -->
+    <!-- <script>
+        function showName(){
+            var name=document.form1.name.value;
+            alert(name);
+        }
+    </script>
+    <form name="form1">
+        Enter your name: <input type="text" name="name">
+        <br>
+        <input type="button" onclick="showName()" value="Click me!">
+    </form>
+    <br><br>
+
+    <!-- 1. Document.getElementById  -->
+    <!-- <script>
+        function showNumber(){
+            var x= document.getElementById('telePhone').value;
+            // alert(x);
+        }
+    </script>
+    <form>
+        Phone no: <input type="text" id="telePhone">
+        <br>
+        <input type="button" onclick="showNumber()" value="Click me!">
+    </form> -->
+    <br><br> -->
+
+    <!-- 02. Document.getElementsByClassName -->
+    <!-- <div class="abc">
+        This is abc 1st time
+    </div>
+    <div class="abc">
+        This is abc 2nd time
+    </div>
+    <div class="abc">
+        This is abc 3rd time
+    </div>
+
+    <script>
+        var x=document.getElementsByClassName('abc');
+        // alert(x[0].innerText);
+        for(value of x){
+            // alert(value.innerText);
+        }
+    </script>
+    <br><br> -->
+
+
+    <!-- 03. Document.getElementsByName() -->
+    <script>
+        function HEllo(){
+        var x= document.getElementsByName("gender");
+        // alert(x[0].default.value);
+        alert(x.length);
+        }
+    </script>
+
+    <form >
+        Male: <input type="radio" name="gender">
+        Female: <input type="radio" name="gender">
+        <!-- <input type="button" onclick="HEllo()" value="clickME!"> -->
+    </form>
+<br><br>
+
+
+    <!-- 04.  Document.getElementsByTagName()-->
+    <script>
+        function countpara(){
+            var x=document.getElementsByTagName('p');
+            alert("total p tags are: "+ x.length);
+        }
+    </script>
+
+    <p>Hello </p>
+    <p>Hii</p>
+    <p>Dhruv</p>
+    <P>I am on Linkedin </P>
+    <input type="button" onclick="countpara()" value="clickME!">
+</body>
+</html>

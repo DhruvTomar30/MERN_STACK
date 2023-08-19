@@ -1,0 +1,14 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    background-color:greenyellow;
+    /* display:inline; */
+    display: inline-block;
+    border-radius: 2px;
+    margin: 5px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes in JavaScript</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+        document.write("<h1>Primitive Datatype</h1>");
+        // var z="dhruv";
+        // var num=10;
+        // var bool="true";
+        // var x;  
+        // document.write(num);
+        // document.write("<br>");
+        // docuement.write(x);                 // undefined 
+        // var y=" ";                // null
+        var temp1=null;
+        var temp2=undefined;
+        if(temp1===temp2){
+            document.write("true");
+        }
+        else{
+            document.write("false","<br>","<br>","<br>","<br>");
+        }
+
+        document.write("<h1>Non Primitive Datatype</h1>");
+        document.write("<h3> Concatination </h3>");
+        var a=50+50+"hello";
+        var b="hello"+50+50;
+        document.write(a,"<br>","<br>");
+        document.write(b);
+
+        var car=["ertiga","verna","XUV"];
+        document.write(car[0],"<br>","<br>");
+
+        // objects.....
+        var person={
+            firstname:"dhruv ",
+            lastname:"tomar ",
+            age:18 ,
+            eyecolor:"brown "
+        };
+        document.write(person.firstname+ " with age " +person.age+ " having eyecolor as " +person.eyecolor);
+
+        
+    </script>
+</body>
+</html>

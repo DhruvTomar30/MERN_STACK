@@ -1,0 +1,29 @@
+.box{
+    background-color: green;
+    border: 2px solid black;
+    width: 100vw;
+    height: 200px;
+    /* animation-name: dhruv;
+    animation-duration: 5s;
+    animation-iteration-count: 1; */
+    animation: dhruv 5s ease-in 1s 1 ;
+}
+
+@keyframes dhruv {
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 250px;
+        left: 0px;
+    }
+    75%{
+        top: 250px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 250px;
+    }
+}

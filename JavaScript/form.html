@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+   <h1 class="main_heading">Payment form</h1>
+   <hr>
+   <form action="" id="loginForm">
+   <h2>User Information</h2>
+   <p>Name: *
+   <input type="text" id="username" required name placeholder="Dhruv tomar">
+   </p>
+   <p>
+    <fieldset>
+        <legend>Gender</legend>
+        Male <input type="radio" name="gender" id="male" >
+        Female <input type="radio" name="gender" id="Female">
+    </fieldset>
+   </p>
+   <p>Address:</p>
+   <textarea placeholder="Enter your Address" name="address" id="" cols="65" rows="8"></textarea>
+   <p>
+    Email:
+    <input type="email" name="email" id="mail" required placeholder="dhruvtomar2020@gmail.com">
+    
+    <p>
+        Pincode:
+        <input type="number" name="pincode" id="pincode" placeholder="201306">
+    </p>
+
+   </p>
+   <h2>Payment Information</h2>
+   <p>Card type:
+    <select name="card_type" id="card_type" required >
+        <option value="">--Select a Card Type--</option>
+            <option value="Visa">Visa</option>
+            <option value="Rupay">Rupay</option>
+            <option value="MasterCard">Mastercard</option>
+    </select>
+   </p>
+   <p>Card Number: *
+    <input type="number" id="card_number" placeholder="4332-1223-6675-2455">
+
+   </p>
+   <p>Expiration Date:
+    <input type="date">
+   </p>
+   <p>CVV: 
+    <input type="number" placeholder="123"> 
+   </p>
+   <input type="submit">
+   </form>
+   </div>
+   <script type="text\script" src="web.js"></script>
+   <!-- <script>
+    let my_data=document.getElementsById('username');
+    console.log(myUsername);
+   </script> -->
+</body>
+</html>

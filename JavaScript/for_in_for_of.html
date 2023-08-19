@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of For in and For of</title>
+</head>
+<body>
+    <script>
+        // For in Loop .......(objects per kaam krti hai)
+        var temp=" ";
+        var person={
+            firstname:"dhruv",
+            lastname:"tomar",
+            age:20,
+        }
+        for(value in person){
+            temp=temp+person[value] + "  ";
+        }
+        document.write(temp);
+
+        // For of Loop.....(iterables pr(array,object,string))
+        // ex. of Array...
+        var alphabets=["A","B","C","D","E"];
+        for(value of alphabets){
+            document.writeln( "<br/>" + value );
+        }
+
+        // Ex. of String...
+        var s="dhruv";
+        for(value of s){
+            document.writeln ("<br/>" + value);
+        }
+    </script>
+</body>
+</html>

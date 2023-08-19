@@ -1,0 +1,32 @@
+.card{
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+img{
+    width: 100%;
+    border-radius: 25px;
+}
+span{
+    color: brown;
+}
+h2{
+    color: rgb(205, 90, 79);
+}
+
+#pets{
+    display: flex;
+    /* gap: 10px; */
+    justify-content: space-evenly;
+    
+}
+
+@media(max-width:667px){
+    #pets{
+        flex-wrap: wrap;
+    }
+}

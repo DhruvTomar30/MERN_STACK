@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Of Function and its Types</title>
+</head>
+<body>
+    <Script>
+        function calculate(num){
+            alert(num*num);
+        }
+    </Script>
+    <input type="button" onclick="calculate(5)" value="square of 5 is ?">
+
+    <!-- 1. Call ()  Function  -->
+    <br/>
+    
+    <script>
+        function Emp(id,name){
+            this.name=name;
+            this.id=id;
+        }
+        
+        function PermanentEmp(id,name){
+            Emp.call(this,id,name);
+        }
+
+        function TemporaryEmp(id,name){
+            Emp.call(this,id,name)
+        }
+        var pEmp=new PermanentEmp(1,"dhruv");  //object...
+        var tEmp=new TemporaryEmp(2,"tomar");
+
+        document.writeln(pEmp.id+" "+pEmp.name);
+        document.writeln(tEmp.id+" "+tEmp.name);
+    </script>
+
+    <!-- 02. Apply() Function...  -->
+    <br/>
+    <script>
+        var arr=[6,3,2,8,7];
+        var max=Math.max.apply(null,arr);
+        document.writeln(max)
+
+        //  "or"
+        var arr2=[1,2,3,4]
+        var arr3=[5,6,7,8]
+        arr2.push.apply(arr2,arr3);             //push
+        document.writeln("<br/>" +arr2);
+    </script>
+
+    <!-- 03. Bind() Function...  -->
+    <script>
+        var website={
+            name:"DhruvTomar",
+            getname:function(){
+                return this.name;
+            }
+        }
+        var website2={
+            name:"google",
+        }
+        var website3={
+            firstname:"vijay",
+        }
+        var unboundGetName=website.getName;
+        var boundGetName=unboundGetName.bind(website2);
+
+        document.writeln(boundGetName());
+    </script>
+    
+</body>
+</html>
