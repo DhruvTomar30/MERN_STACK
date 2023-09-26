@@ -1,0 +1,45 @@
+body {
+    text-align: center; /* Center vertically */
+}
+
+.btn {
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+    text-align:center;
+
+    
+}
+
+.btn-container {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-direction: row; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally within the container */
+}
+
+.yellow {
+    background-color: #f99b45;
+    
+}
+.red {
+    background-color: #d95980;
+}
+.purple {
+    background-color: #819ff9;
+}
+.green {
+    background-color: #63aac0;
+}
+
+/* Change the class name to "flash" */
+.gameFlash {
+    background-color: white;
+}
+
+.userFlash{
+    background-color: green;
+}
