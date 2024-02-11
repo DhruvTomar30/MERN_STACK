@@ -25,6 +25,9 @@
 // }
 
 //  RANDOM COLOR CHANGER -------->
+
+
+
 let btn=document.querySelector('button');
 btn.addEventListener("click",function(){
     h3=document.querySelector('h3');

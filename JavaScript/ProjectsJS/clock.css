@@ -1,0 +1,29 @@
+#clockcontainer{
+    height: 40vw;
+    width: 40vw;
+    background: url(https://media.geeksforgeeks.org/wp-content/uploads/20210302161254/imgonlinecomuaCompressToSizeOmNATjUMFKw-300x300.jpg) no-repeat;
+    position: relative; 
+    margin: auto;
+    background-size: 100%;
+
+}
+
+#hour,
+#minute,
+#second{
+    position: absolute;
+    border-radius: 10px;
+    
+    transform-origin: bottom;
+    
+}
+
+#hour{
+    width: 2%;
+    height: 25%;
+    top: 25%;
+    left: 48%;
+
+}
+
+

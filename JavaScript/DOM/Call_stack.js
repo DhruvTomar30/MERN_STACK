@@ -123,23 +123,41 @@ function changeColor(color,delay){
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
             h1.style.color=color;
+            console.log(`color changed to: ${color}!`)
             resolve("color changed");
         },delay);
     });
 }
-changeColor("red",1000)
-    .then(()=>{
-        console.log("red color was changed");
-        return changeColor("blue",1000);
-    })
-    .then(()=>{
-        console.log("blue color was changed");
-        return changeColor("green", 1000);
-    })
-    .then(()=>{
-        console.log("green color was chnaged");
-        return changeColor("yellow", 1000);
-    })
-    .then(()=>{
-    console.log("yellow was changed");
-    });
+
+
+
+// Using Await Keyword.....
+async function demo(){
+    await changeColor("red",1000);
+    await changeColor("green",1000);
+    await changeColor("orange",1000);
+    await changeColor("blue",1000);
+    await changeColor("purple",1000);
+    console.log("done");
+}
+
+console.log("done");
+
+
+// changeColor("red",1000)
+//     .then(()=>{
+//         console.log("red color was changed");
+//         return changeColor("blue",1000);
+//     })
+//     .then(()=>{
+//         console.log("blue color was changed");
+//         return changeColor("green", 1000);
+//     })
+//     .then(()=>{
+//         console.log("green color was chnaged");
+//         return changeColor("yellow", 1000);
+//     })
+//     .then(()=>{
+//     console.log("yellow was changed");
+//     });
+
